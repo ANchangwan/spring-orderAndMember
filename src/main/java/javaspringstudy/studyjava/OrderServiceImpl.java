@@ -5,7 +5,7 @@ import javaspringstudy.studyjava.dto.Order;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 @RequiredArgsConstructor
 public class OrderServiceImpl implements OrderService {
     private final MemberRepository memberRepository;
