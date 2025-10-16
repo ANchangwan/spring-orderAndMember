@@ -1,6 +1,4 @@
-package javaspringstudy;
-
-import javaspringstudy.studyjava.dto.Member;
+package javaspringstudy.studyjava.member;
 
 public interface MemberService {
     void join(Member member);

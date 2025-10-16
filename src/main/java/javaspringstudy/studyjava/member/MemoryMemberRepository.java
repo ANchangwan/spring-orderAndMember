@@ -1,12 +1,13 @@
-package javaspringstudy.studyjava;
+package javaspringstudy.studyjava.member;
 
-import javaspringstudy.studyjava.dto.Member;
-import org.springframework.stereotype.Repository;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
 
-//@Repository
+@Component
+@Primary
 public class MemoryMemberRepository  implements MemberRepository {
 
     private static Map<Long, Member> members = new HashMap<>();
@@ -18,8 +19,7 @@ public class MemoryMemberRepository  implements MemberRepository {
 
     @Override
     public Member findById(Long id) {
-        Member member = members.get(id);
-        return member;
+        return members.get(id);
     }
 
 

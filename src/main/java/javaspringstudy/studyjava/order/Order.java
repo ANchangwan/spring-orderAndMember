@@ -1,4 +1,4 @@
-package javaspringstudy.studyjava.dto;
+package javaspringstudy.studyjava.order;
 
 
 import lombok.*;
@@ -9,8 +9,4 @@ public class Order {
     private String itemName;
     private int itemPrice;
     private int discountPrice;
-
-
-
-
 }

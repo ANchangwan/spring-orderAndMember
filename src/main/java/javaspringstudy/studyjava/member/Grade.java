@@ -1,4 +1,4 @@
-package javaspringstudy.studyjava;
+package javaspringstudy.studyjava.member;
 
 public enum Grade {
     VIP,
